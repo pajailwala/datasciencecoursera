@@ -7,6 +7,8 @@
 #From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 ####################################
 
+# Set the initial working directory to download the zip file to
+setwd("/Users/jailwalapa/Documents/DataScience/CourseProject/")
 
 # Load required libraries
 library(tidyr)
@@ -17,9 +19,6 @@ library(data.table)
 
 # Clear workspace
 rm(list=ls())
-
-# Set the initial working directory to download the zip file to
-setwd("/Users/jailwalapa/Documents/DataScience/CourseProject/")
 
 # Download the zipped input file from the given URL, only if it does not already exist
 if (!file.exists("./dataset.zip")) {
